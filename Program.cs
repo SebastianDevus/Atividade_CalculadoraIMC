@@ -25,36 +25,42 @@ if (imc < 17)
 }
 else if (imc < 18.49)
 {
+    // Exibe em amarelo que o usuário está abaixo do peso
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine("Diagnóstico: Abaixo do peso");
     Console.ResetColor();
 }
 else if (imc < 24.99)
 {
+    // Exibe em verde que o usuário está no peso normal
     Console.ForegroundColor = ConsoleColor.Green;
     Console.WriteLine("Diagnóstico: Peso normal");
     Console.ResetColor();
 }
 else if (imc < 29.99)
 {
+    // Exibe em amarelo que o usuário está acima do peso
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine("Diagnóstico: Acima do peso");
     Console.ResetColor();
 }
 else if (imc < 34.99)
 {
+    // Exibe em vermelho "escuro" que o usuário está obeso
     Console.ForegroundColor = ConsoleColor.DarkRed;
     Console.WriteLine("Diagnóstico: Obesidade");
     Console.ResetColor();
 }
 else if (imc < 39.99)
 {
+    // Exibe em vermelho que o usuário está severamente obeso
     Console.ForegroundColor = ConsoleColor.Red;
     Console.WriteLine("Diagnóstico: Obesidade severa");
     Console.ResetColor();
 }
 else if (imc >= 40)
 {
+    // Exibe em magenta escuro que o usuário está mórbidamente obeso
     Console.ForegroundColor = ConsoleColor.DarkMagenta;
     Console.WriteLine("Diagnóstico: Obesidade mórbida");
     Console.ResetColor();

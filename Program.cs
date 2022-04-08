@@ -9,10 +9,13 @@ altura = Convert.ToDouble(Console.ReadLine());
 Console.Write("Digite seu peso em kg........: ");
 massa = Convert.ToDouble(Console.ReadLine());
 
-Console.WriteLine(); // Espacamento
+// Espacamento
+Console.WriteLine(); 
 
-// Calculando e exibindo IMC
+// Calculando IMC
 imc = massa / Math.Pow(altura, 2);
+
+//Exibindo IMC
 Console.WriteLine($"Seu IMC é {imc:N2} kg/m².");
 
 // Verifica o IMC, e age de acordo
@@ -58,7 +61,7 @@ else if (imc < 39.99)
     Console.WriteLine("Diagnóstico: Obesidade severa");
     Console.ResetColor();
 }
-else if (imc >= 40)
+else
 {
     // Exibe em magenta escuro que o usuário está mórbidamente obeso
     Console.ForegroundColor = ConsoleColor.DarkMagenta;
@@ -66,4 +69,5 @@ else if (imc >= 40)
     Console.ResetColor();
 }
 
-Console.WriteLine(); // Espacamento
+// Espacamento
+Console.WriteLine(); 
